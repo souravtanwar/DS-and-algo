@@ -1,7 +1,5 @@
 /*FIND THE Kth NODE FROM THE EBD OF SINGLY LINKED LIST*/
 
-/*METHOD 1*/
-
 #include<iostream>
 #include <bits/stdc++.h> 
 
@@ -12,7 +10,7 @@ struct Node {
     struct Node *next;
 };
 typedef struct Node node;
-
+/*METHOD 1*/
 /*node* find_from_end(node *Head,int k)
 {
     node *p,*q;
@@ -43,7 +41,7 @@ typedef struct Node node;
     }
 }
 */
-
+/*METHOD 2*/
 void getkthfromend(node* Head, int k){
     node *p;
     int n=0;
@@ -144,8 +142,6 @@ int main() {
             default:
                    cout<<"\n\t Please Enter a Valid Choice(1/2/3/4)"<<endl;
                     break;
-            
-
         }
     } while (i!=4);
    return 0; 
